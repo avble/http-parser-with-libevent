@@ -36,7 +36,9 @@ $ ./http_srv 0.0.0.0 12345 # run server
 
 # Performance
 There are several criterias for measuring the performance of a http server.
-The performance is measured on environment: `11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz` and `microsoft-standard-WSL2`
+The performance is measured on environment: 
+* CPU: `11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz`
+* OS: `microsoft-standard-WSL2` Ubuntu 22.04
 The ab tool is used to measure the performance. It is also understood that the evaluation result may vary on the environment (OS and hardware). 
 
 ## Request per second
