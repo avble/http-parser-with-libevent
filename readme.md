@@ -50,9 +50,9 @@ $ ab -k -c 50 -n 100000 127.0.0.1:12345/route_01
 |----|----|----|
 | http-parser-with-libevent  |      ~150,000      |  using llhttp-parser (not internal http of libevent) |
 | internal http libevent  |      ~95,000      |  [bench_http](https://github.com/libevent/libevent/blob/master/test/bench_http.c) of libevent (release-2.1.12-stable) |
-| nodejs   |    12,000 rps  | v12.22.9 |
-| asiohttp | 11,000 rps | 3.10.6 |
-| flask   | 697 rps | 3.0.3 |
+| nodejs   |    12,000  | v12.22.9 |
+| asiohttp | 11,000 | 3.10.6 |
+| flask   | 697 | 3.0.3 |
 
 # Appendix
 nodejs server code test
