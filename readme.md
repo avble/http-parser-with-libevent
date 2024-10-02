@@ -36,9 +36,7 @@ $ ./http_srv 0.0.0.0 12345 # run server
 
 # Performance
 There are several criterias for measuring the performance of a http server.
-
 The performance is measured on environment: `11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz` and `microsoft-standard-WSL2`
-
 The ab tool is used to measure the performance. It is also understood that the evaluation result may vary on the environment (OS and hardware). 
 
 ## Request per second
@@ -49,6 +47,7 @@ $ ab -k -c 50 -n 100000 127.0.0.1:12345/route_01
 ```
 
 | http server | Request per second | Remark |
+|----|----|----|
 | http-parser-with-libevent  |      ~150,000      |  using llhttp-parser (not internal http of libevent) |
 | internal http libevent  |      ~95,000      |  [bench_http](https://github.com/libevent/libevent/blob/master/test/bench_http.c) of libevent (release-2.1.12-stable) |
 | nodejs   |    12,000 rps  | v12.22.9 |
