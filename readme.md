@@ -7,6 +7,7 @@ sudo apt install libevent-dev
 
 # macOS
 brew install libevent
+```
 
 # http-parser-with-libevent
 A mini C++ http server backed by I/O event libraries: [libevent](https://github.com/libevent/libevent) and [http-parser](https://github.com/nodejs/llhttp)
