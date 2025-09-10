@@ -8,6 +8,7 @@ include(external.cmake)
 add_executable(http_srv main.cpp)
 
 set_property(TARGET http_srv PROPERTY CXX_STANDARD 17)
+set(CMAKE_EXPORT_COMPILE_COMMANDS ON CACHE BOOL "export compile command" FORCE)
 
 find_package(PkgConfig REQUIRED)
 pkg_check_modules(LIBEVENT REQUIRED libevent)

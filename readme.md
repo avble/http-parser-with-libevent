@@ -1,8 +1,10 @@
 # Dependencies
 libevent
 
-``` shell
-# Ubunto
+Install the below package for development
+
+``` 
+# Ubuntu 
 sudo apt install libevent-dev
 
 # macOS
